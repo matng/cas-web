@@ -1,29 +1,32 @@
 package com.hxd.vo;
 
+import java.math.BigDecimal;
 import java.util.List;
-
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONArray;
-import com.alibaba.fastjson.JSONObject;
 
 
 public class ResourceVo extends BaseVo {
 
-    private Integer id;
+	private Integer id;
 
     private Integer groupid;
 
     private Byte restype;
 
-    private String bigpicurl;
+    private String resName;
 
-    private String smallpicurl;
+    private BigDecimal unitPrice;
 
-    private String fileurl;
+    private Integer number;
+
+    private BigDecimal totalPrice;
+    
+    private String createTime;
+    
+    private String updateTime;
+    
+    private String info;
     
     private List<String> idList;
-    
-    private String resName;
     
     private String groupName;
     
@@ -59,28 +62,52 @@ public class ResourceVo extends BaseVo {
 		this.restype = restype;
 	}
 
-	public String getBigpicurl() {
-		return bigpicurl;
+	public BigDecimal getUnitPrice() {
+		return unitPrice;
 	}
 
-	public void setBigpicurl(String bigpicurl) {
-		this.bigpicurl = bigpicurl;
+	public void setUnitPrice(BigDecimal unitPrice) {
+		this.unitPrice = unitPrice;
 	}
 
-	public String getSmallpicurl() {
-		return smallpicurl;
+	public Integer getNumber() {
+		return number;
 	}
 
-	public void setSmallpicurl(String smallpicurl) {
-		this.smallpicurl = smallpicurl;
+	public void setNumber(Integer number) {
+		this.number = number;
 	}
 
-	public String getFileurl() {
-		return fileurl;
+	public BigDecimal getTotalPrice() {
+		return totalPrice;
 	}
 
-	public void setFileurl(String fileurl) {
-		this.fileurl = fileurl;
+	public void setTotalPrice(BigDecimal totalPrice) {
+		this.totalPrice = totalPrice;
+	}
+
+	public String getCreateTime() {
+		return createTime;
+	}
+
+	public void setCreateTime(String createTime) {
+		this.createTime = createTime;
+	}
+
+	public String getUpdateTime() {
+		return updateTime;
+	}
+
+	public void setUpdateTime(String updateTime) {
+		this.updateTime = updateTime;
+	}
+
+	public String getInfo() {
+		return info;
+	}
+
+	public void setInfo(String info) {
+		this.info = info;
 	}
 
 	public List<String> getIdList() {

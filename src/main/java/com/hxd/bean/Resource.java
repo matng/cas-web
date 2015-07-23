@@ -1,5 +1,9 @@
 package com.hxd.bean;
 
+import java.math.BigDecimal;
+import java.util.Date;
+
+
 public class Resource {
     private Integer id;
 
@@ -7,15 +11,19 @@ public class Resource {
 
     private Byte restype;
 
-    private String bigpicurl;
+    private String resName;
 
-    private String smallpicurl;
+    private BigDecimal unitPrice;
 
-    private String fileurl;
+    private Integer number;
 
-    private String resname;
+    private BigDecimal totalPrice;
     
-    private Byte usetype;
+    private Date createTime;
+    
+    private Date updateTime;
+    
+    private String info;
     
     public Integer getId() {
         return id;
@@ -41,44 +49,59 @@ public class Resource {
         this.restype = restype;
     }
 
-    public String getBigpicurl() {
-        return bigpicurl;
+    public String getResName() {
+        return resName;
     }
 
-    public void setBigpicurl(String bigpicurl) {
-        this.bigpicurl = bigpicurl == null ? null : bigpicurl.trim();
+    public void setResName(String resName) {
+        this.resName = resName;
     }
 
-    public String getSmallpicurl() {
-        return smallpicurl;
-    }
-
-    public void setSmallpicurl(String smallpicurl) {
-        this.smallpicurl = smallpicurl == null ? null : smallpicurl.trim();
-    }
-
-    public String getFileurl() {
-        return fileurl;
-    }
-
-    public void setFileurl(String fileurl) {
-        this.fileurl = fileurl == null ? null : fileurl.trim();
-    }
-
-	public String getResname() {
-		return resname;
+	public BigDecimal getUnitPrice() {
+		return unitPrice;
 	}
 
-	public void setResname(String resname) {
-		this.resname = resname;
+	public void setUnitPrice(BigDecimal unitPrice) {
+		this.unitPrice = unitPrice;
 	}
 
-	public Byte getUsetype() {
-		return usetype;
+	public Integer getNumber() {
+		return number;
 	}
 
-	public void setUsetype(Byte usetype) {
-		this.usetype = usetype;
+	public void setNumber(Integer number) {
+		this.number = number;
 	}
-    
+
+	public BigDecimal getTotalPrice() {
+		return totalPrice;
+	}
+
+	public void setTotalPrice(BigDecimal totalPrice) {
+		this.totalPrice = totalPrice;
+	}
+	
+	public Date getCreateTime() {
+		return createTime;
+	}
+
+	public void setCreateTime(Date createTime) {
+		this.createTime = createTime;
+	}
+
+	public Date getUpdateTime() {
+		return updateTime;
+	}
+
+	public void setUpdateTime(Date updateTime) {
+		this.updateTime = updateTime;
+	}
+
+	public String getInfo() {
+		return info;
+	}
+
+	public void setInfo(String info) {
+		this.info = info;
+	}
 }
